@@ -35,18 +35,18 @@ Start Minikube:
 minikube start
 ```
 ## 📦 Deploy to Kubernetes
-# 1.	Create a new namespace:
+### 1.	Create a new namespace:
   
   ```
 kubectl create namespace voting
 
 ```
-# 2.	Apply all Kubernetes manifests:
+### 2.	Apply all Kubernetes manifests:
    ```
  kubectl apply -f k8s/ --namespace=voting
 ```
    Replace k8s/ with the actual directory containing your YAML manifests.
-# 3.	Verify the Pods and Services are running:
+### 3.	Verify the Pods and Services are running:
       ```
       kubectl get pods,svc -n voting
       ```
